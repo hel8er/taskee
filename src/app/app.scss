@@ -1,8 +1,5 @@
-@import "tailwindcss";
+@use "tailwindcss" as *;
 
 div {
-    @apply border;
-}
-.login {
-    @apply flex flex-col items-center justify-center h-screen;
+    /* @apply border; */
 }
