@@ -1,19 +1,19 @@
+import prisma from "prisma";
 import { signIn } from "@/auth";
-
-export default function LoginForm() {
+export default function SignUpForm() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <form
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
         action={async (formData) => {
           "use server";
-          signIn("credentials", formData);
+          await signIn("credentials", formData);
         }}
       >
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="email"
+            htmlFor="username"
           >
             Email
           </label>
