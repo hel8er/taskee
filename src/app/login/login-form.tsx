@@ -7,7 +7,7 @@ export default function LoginForm() {
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
         action={async (formData) => {
           "use server";
-          signIn("credentials", formData);
+          await signIn("credentials", formData);
         }}
       >
         <div className="mb-4">
